@@ -3,8 +3,6 @@
 import { useState } from 'react';
 import Header from './Header.jsx';
 //import TabButton from './TabButton.jsx';
-//import { SOIL_THINGS } from './data.js';
-//import data from './data.js';
   
   function App(){
   
