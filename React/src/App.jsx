@@ -33,7 +33,8 @@ import Header from './Header.jsx';
          setresult(" GOOD THINK:Nutrition is the Best Prescription.");
        }
        else if(userInput==4){
-        document.getElementById("userInput").value = '';        setresult(" GOOD THINK:Learn as if you will live forever, live like you will die tomorrow.")
+        document.getElementById("userInput").value = '';       
+         setresult(" GOOD THINK:Learn as if you will live forever, live like you will die tomorrow.")
       }
       else if(userInput==5) {
         document.getElementById("userInput").value = '';
