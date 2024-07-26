@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link src="stylesheet" href="style.css">
+    <h4>Note your own items list</h4>
+    
+    
+    <h1>KEEP TOUCH </h1>
+    
+</head>
+<body>
+    
+        
+    
+    <input type="text" id="input" placeholder="Enter a list item">
+    <button onclick="add()">Add</button>
+    <ul id="add"></ul>
+    
+
+    <script>
+        var ul = document.getElementById("add");
+        var input = document.getElementById("input");
+
+        function add() {
+            if (input.value.trim() === "") {
+                alert("Please enter a list .");
+                return;
+            }
+
+            var listItem = document.createElement("li");
+            listItem.innerHTML = input.value + " <button onclick='remove(event)'>delete</button>";
+            ul.append(listItem);
+            input.value = ""; 
+        }
+
+        function remove(event) {
+            event.target.parentElement.remove();
+        }
+            
+    </script>
+</body>
+</html>
+    
+</body>
+</html>
